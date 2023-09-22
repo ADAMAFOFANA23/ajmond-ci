@@ -1,0 +1,22 @@
+name: theme_ajmond
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - theme_ajmond/base
+  - theme_ajmond/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - theme_ajmond/user
+  core/drupal.dropbutton:
+    - theme_ajmond/dropbutton
+  core/drupal.dialog:
+    - theme_ajmond/dialog
+  file/drupal.file:
+    - theme_ajmond/file
+  core/drupal.progress:
+    - theme_ajmond/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.1.4'
